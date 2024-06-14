@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de Películas Mexicanas</title>
+<link rel="stylesheet" href="Calcu_Estilo.css">
+</head>
+<body>
+
+<div class="calculator">
+  <!-- Pantalla de la calculadora -->
+  <input type="text" class="screen" id="screen" readonly>
+  <!-- Botones de la calculadora -->
+  <div class="buttons">
+    <button id="clear" onclick="clearScreen()">C</button>
+    <button id="divide" onclick="appendInput('/')">/</button>
+    <button id="multiply" onclick="appendInput('*')">*</button>
+    <button id="siete" onclick="appendInput('7')">7</button>
+    <button id="tocho" onclick="appendInput('8')">8</button>
+    <button id="nover" onclick="appendInput('9')">9</button>
+    <button id="subtract" onclick="appendInput('-')">-</button>
+    <button id="cuatro" onclick="appendInput('4')">4</button>
+    <button id="cinco" onclick="appendInput('5')">5</button>
+    <button id="seis" onclick="appendInput('6')">6</button>
+    <button id="add" onclick="appendInput('+')">+</button>
+    <button id="uno" onclick="appendInput('1')">1</button>
+    <button id="dos" onclick="appendInput('2')">2</button>
+    <button id="tres" onclick="appendInput('3')">3</button>
+    <button id="equals" onclick="calculate()">=</button>
+    <button id="cero" onclick="appendInput('0')">0</button>
+    <button id="decimal" onclick="appendInput('.')">.</button>
+  </div>
+</div>
+
+<script src="Calcu_Funcion.js"></script>
+</body>
+</html>
